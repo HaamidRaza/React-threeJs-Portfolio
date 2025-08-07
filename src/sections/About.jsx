@@ -62,7 +62,7 @@ const About = () => {
             <img
               src="/assets/coder.svg"
               alt="grid3"
-              className="w-full sm:w-[350px] h-fit object-contain"
+              className="w-full sm:w-[350px] sm:mx-28 h-fit object-contain"
             />
             <div>
               <p className="grid-headtext">Coding &#128511;</p>

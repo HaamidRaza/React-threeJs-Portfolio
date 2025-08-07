@@ -1,13 +1,11 @@
-import React from "react";
-
 const Projects = () => {
   return (
     <section className="c-space mt-5 mb-[7rem] md:mb-[6rem]">
       <p className="head-text">My Big Work..</p>
 
       <div className="mt-12 gap-4 w-full">
-        <div className="relative h-[150px] animate-crumble">
-          <div className="absolute right-[26.4%] md:right-[43.5%] -top-4 w-3 h-3 bg-gray-700 rounded-full shadow-md z-20 "></div>
+        <div className="relative h-[150px] animate-crumble xs:h-[200px]">
+          <div className="absolute right-[26.4%] sm:right-[35.5%] xs:right-[6.5%] -top-4 w-3 h-3 bg-gray-700 rounded-full shadow-md z-20 "></div>
           {/* Under Construction Sign */}
           <div
             className="absolute left-[23%] md:left-[33%] -top-6 -translate-x-1/2 z-10 bg-yellow-300 border-4 border-yellow-600 rounded-md px-6 py-2 text-center font-bold text-yellow-900 text-lg shadow-md animate-swing"

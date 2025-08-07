@@ -7,12 +7,8 @@ import DustParticles from "../components/DustParticles";
 import CanvasLoader from "../components/CanvasLoader";
 
 const Experiences = () => {
+  const isSmall = useMediaQuery({maxWidth: 440 })
   const isMobile = useMediaQuery({ maxWidth: 760 });
-    const ref = useRef()
-
-// useFrame((state, delta) => {
-//   ref.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.2) * 0.1;
-// });
   return (
     <section className="c-space my-20" id="#work">
       <div className="w-full text-white-600">
@@ -26,7 +22,7 @@ const Experiences = () => {
               <PerspectiveCamera makeDefault position={[0, 0, 50]} />
               <DustParticles count={120}/>
               <Crane
-                position={isMobile ? [-13.5, -25.7, 0] : [-27, -37, 0]}
+                position={isSmall? [-10.4,-24,0] : isMobile ? [-13.5, -25.7, 0] : [-27, -37, 0]}
                 scale={isMobile ? 0.7 : 1}
                 
               />
@@ -38,7 +34,7 @@ const Experiences = () => {
             <img
               src="/assets/brick-wall.png"
               alt="brick wall"
-              className="absolute inset-0 w-full h-full object-cover opacity-40  "
+              className="absolute inset-0 w-full h-full object-cover opacity-40  xs:opacity-20"
             />
             <div className="text-center text-gray-100 px-6">
               <p

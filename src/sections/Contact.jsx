@@ -75,7 +75,7 @@ const Contact = () => {
         <img
           src="/assets/bg-city.webp"
           alt="terminal"
-          className="absolute inset-0 min-h-screen opacity-30"
+          className="absolute inset-0 min-h-screen opacity-30 xs:opacity-20"
         />
         <div className="contact-container">
           <h3 className="head-text">Connect with me</h3>
