@@ -11,7 +11,7 @@ const NavItem = ({ onClick }) => {
             to={href}
             smooth={true}
             duration={500}
-            offset={-50}
+            offset={-80}
             className="nav-li-a cursor-pointer"
             onClick={onClick}
           >
@@ -51,7 +51,7 @@ const Navbar = () => {
             />
           </button>
           <nav className="sm:flex hidden">
-            <NavItem />
+            <NavItem onClick={()=> setIsOpen(false)}/>
           </nav>
         </div>
       </div>

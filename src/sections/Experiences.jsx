@@ -1,9 +1,10 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import React, { useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import Crane from "../components/Crane";
 import { PerspectiveCamera } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import DustParticles from "../components/DustParticles";
+import CanvasLoader from "../components/CanvasLoader";
 
 const Experiences = () => {
   const isMobile = useMediaQuery({ maxWidth: 760 });
@@ -19,8 +20,9 @@ const Experiences = () => {
         <div className="relative w-full h-screen">
           <div className="absolute top-0 left-0 w-full h-full z-30 pointer-events-none">
             <Canvas>
+            <Suspense fallback={<CanvasLoader/>}>
               <ambientLight intensity={0.5} />
-              <spotLight position={[10, 10, 10]} angle={0.2} penumbra={0.5} intensity={1} castShadow/>
+              <spotLight position={[10, 10, 10]} angle={0.2} penumbra={0.5} intensity={1}/>
               <PerspectiveCamera makeDefault position={[0, 0, 50]} />
               <DustParticles count={120}/>
               <Crane
@@ -28,6 +30,7 @@ const Experiences = () => {
                 scale={isMobile ? 0.7 : 1}
                 
               />
+            </Suspense>
             </Canvas>
           </div>
 

@@ -11,6 +11,7 @@ import Cube from "../components/Cube";
 import Rings from "../components/Ring";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   //allows for responsive screens --|
@@ -57,13 +58,13 @@ const Hero = () => {
         </Canvas>
       </div>
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#contact" className="w-fit">
+        <Link to="#contact" smooth={true} duration={500} className="w-fit">
           <Button
             name="Let's Work Together"
             isBeam
             containerClasss="sm:w-fit w-full sm:min-w-96"
           />
-        </a>
+        </Link>
       </div>
     </section>
   );
