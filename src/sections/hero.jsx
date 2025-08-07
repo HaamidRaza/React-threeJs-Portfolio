@@ -15,11 +15,12 @@ import { Link } from "react-scroll";
 
 const Hero = () => {
   //allows for responsive screens --|
+  const isRealMobile = useMediaQuery({maxWidth: 360 })
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 760 });
   const isTablet = useMediaQuery({ minWidth: 760, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  const sizes = calculateSizes(isRealMobile, isSmall, isMobile, isTablet);
 
   return (
     <section className="min-h-screen w-full flex-col relative" id="#home">

@@ -7,7 +7,8 @@ import DustParticles from "../components/DustParticles";
 import CanvasLoader from "../components/CanvasLoader";
 
 const Experiences = () => {
-  const isSmall = useMediaQuery({maxWidth: 440 })
+  const isRealMobile = useMediaQuery({ maxWidth: 360 });
+  const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 760 });
   return (
     <section className="c-space my-20" id="#work">
@@ -16,17 +17,29 @@ const Experiences = () => {
         <div className="relative w-full h-screen">
           <div className="absolute top-0 left-0 w-full h-full z-30 pointer-events-none">
             <Canvas>
-            <Suspense fallback={<CanvasLoader/>}>
-              <ambientLight intensity={0.5} />
-              <spotLight position={[10, 10, 10]} angle={0.2} penumbra={0.5} intensity={1}/>
-              <PerspectiveCamera makeDefault position={[0, 0, 50]} />
-              <DustParticles count={120}/>
-              <Crane
-                position={isSmall? [-10.4,-24,0] : isMobile ? [-13.5, -25.7, 0] : [-27, -37, 0]}
-                scale={isMobile ? 0.7 : 1}
-                
-              />
-            </Suspense>
+              <Suspense fallback={<CanvasLoader />}>
+                <ambientLight intensity={0.5} />
+                <spotLight
+                  position={[10, 10, 10]}
+                  angle={0.2}
+                  penumbra={0.5}
+                  intensity={1}
+                />
+                <PerspectiveCamera makeDefault position={[0, 0, 50]} />
+                <DustParticles count={120} />
+                <Crane
+                  position={
+                    isRealMobile
+                      ? [-14, -42, -30]
+                      : isSmall
+                      ? [-10.4, -24, 0]
+                      : isMobile
+                      ? [-13.5, -25.7, 0]
+                      : [-27, -37, 0]
+                  }
+                  scale={isRealMobile ? 1.2 : isMobile ? 0.7 : 1}
+                />
+              </Suspense>
             </Canvas>
           </div>
 

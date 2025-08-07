@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs : '440px'
+        xs : '440px',
+        xss : '360px'
       },
       fontFamily: {
         generalsans: ["General Sans", "sans-serif"],
