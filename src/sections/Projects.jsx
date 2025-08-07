@@ -5,10 +5,10 @@ const Projects = () => {
 
       <div className="mt-12 gap-4 w-full">
         <div className="relative h-[150px] animate-crumble xs:h-[200px] xss:h-[230px]">
-          <div className="absolute right-[26.4%] sm:right-[35.5%] xs:right-[6.5%] xss:right-[2%] -top-4 w-3 h-3 bg-gray-700 rounded-full shadow-md z-20 "></div>
+          <div className="absolute lg:right-[43.4%] md:right-[26.5%] sm:right-[35.5%] xs:right-[6.5%] xss:right-[2%] -top-4 w-3 h-3 bg-gray-700 rounded-full shadow-md z-20 "></div>
           {/* Under Construction Sign */}
           <div
-            className="absolute left-[23%] md:left-[33%] -top-6 xss:-top-10 -translate-x-1/2 z-10 bg-yellow-300 border-4 border-yellow-600 rounded-md px-6 py-2 text-center font-bold text-yellow-900 text-lg shadow-md animate-swing"
+            className="absolute left-[23%] md:left-[33%] md:-top-5 -top-6 xss:-top-10 -translate-x-1/2 z-10 bg-yellow-300 border-4 border-yellow-600 rounded-md px-6 py-2 text-center font-bold text-yellow-900 text-lg shadow-md animate-swing"
             style={{ transformOrigin: "top right" }}
           >
             🚧 Under Construction 🚧
