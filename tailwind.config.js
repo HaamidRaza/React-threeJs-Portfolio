@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs : '440px',
-        xss : '360px'
+        xs: "440px",
+        xss: "360px",
       },
       fontFamily: {
         generalsans: ["General Sans", "sans-serif"],
@@ -44,10 +44,30 @@ export default {
           "80%": { transform: "translateY(-1px) rotate(-0.2deg)" },
           "100%": { transform: "translateY(0px) rotate(0deg)" },
         },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(0px)",},
+          // "50%": {transform: "translateY(-5px)",},
+          "100%": { transform: "translateY(-10px)", },
+        },
+        flipIn: {
+          "0%": {
+            transform: "rotateY(10deg)",
+          },
+          "100%": {
+            transform: "rotateY(0)",
+          },
+        },
       },
       animation: {
         swing: "swing 2s ease-in-out infinite",
-        crumble: 'crumble 3s ease-in-out infinite',
+        crumble: "crumble 3s ease-in-out infinite",
+        fadeIn: "fadeIn 0.5s ease-out forwards",
+        slideUp: "slideUp 0.5s ease-in-out forwards",
+        flipIn: "flipIn 0.6s ease-out forwards",
       },
     },
   },

@@ -38,7 +38,7 @@ const About = () => {
     <section className="c-space my-20" id="#about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         {/* First Grid Item */}
-        <div className="col-span-1 xl:row-span-3">
+        <div className="col-span-1 xl:row-span-3 hover:animate-slideUp">
           <div className="grid-container">
             <img
               src="/assets/mountains.png"
@@ -58,11 +58,11 @@ const About = () => {
 
         {/* Second Grid Item */}
         <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
+          <div className="grid-container hover:animate-slideUp">
             <img
               src="/assets/coder.svg"
-              alt="grid3"
-              className="w-full sm:w-[350px] sm:mx-28 h-fit object-contain"
+              alt="grid2"
+              className="w-full sm:max-w-[350px] md:w-full sm:mx-20 md:mx-0 h-fit object-contain"
             />
             <div>
               <p className="grid-headtext">Coding &#128511;</p>
@@ -77,7 +77,7 @@ const About = () => {
 
         {/* Third Grid Item - Globe */}
         <div className="col-span-1 xl:row-span-4">
-          <div className="grid-container">
+          <div className="grid-container hover:animate-slideUp">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
               ref={globeEl}
@@ -114,10 +114,10 @@ const About = () => {
 
         {/* Fourth Grid Item */}
         <div className="xl:col-span-2 xl:row-span-3">
-          <div className="grid-container flex flex-col items-center justify-center">
+          <div className="grid-container flex flex-col items-center justify-center hover:animate-crumble">
             <img
               src="/assets/developer.png"
-              alt="grid2"
+              alt="grid4"
               className="w-full sm:w-[400px] h-fit object-contain"
             />
             <div className="text-left">
@@ -138,7 +138,7 @@ const About = () => {
         
         {/* Fifth Grid */}
         <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
+          <div className="grid-container hover:animate-crumble hover:-translate-y-10">
             <img
               src="assets/grid4.png"
               alt="grid-4"
