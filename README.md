@@ -41,19 +41,28 @@ src/
 ```
 ## Installation
 1. Clone the repository:
+```
 git clone https://github.com/your-username/react-three-js-portfolio.git
+```
+```
 cd react-three-js-portfolio
-2. Install dependencies:
+```
+3. Install dependencies:
+```
 npm install
-  or
+ or
 yarn install
-3. Start the development server:
+```
+5. Start the development server:
+```
 npm run dev
-  or
+ or
 yarn dev
-4. Buil for production:
+```
+7. Buil for production:
+```
 npm run build
-
+```
 # Deployment
 The project is deployed using Vercel.
 ## To deploy:
