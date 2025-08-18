@@ -27,7 +27,7 @@ const Footer = () => {
                 <img src="assets/linkedin.svg" alt="linkedIn" className='w-1/2 h-1/2'/>
             </a>
         </div>
-        <p className='text-white-500'>Ⓒ 2025 Haamid, All rights reserved.</p>
+        <p className='text-white-500'>&copy; {new Date().getFullYear()} Haamid, All rights reserved.</p>
     </section>
   )
 }
