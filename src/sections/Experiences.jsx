@@ -22,7 +22,7 @@ const Experiences = () => {
   }, []);
 
   return (
-    <section className="c-space my-20" id="work">
+    <section className="c-space my-20" id="#work">
       <div className="w-full text-white-600">
         <h3 className="head-text">Work Experience</h3>
 
