@@ -74,7 +74,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-20 c-space">
-        <Link to="contact" smooth={true} duration={500} className="w-fit">
+        <Link to="#about" smooth={true} duration={500} className="w-fit">
           <Button
             name="Let's Work Together"
             isBeam

@@ -14,7 +14,7 @@ const About = () => {
       setHasCopied(false);
     }, 2000);
   };
-   const globeEl = useRef();
+  const globeEl = useRef();
 
   useEffect(() => {
     let frameId;
@@ -33,7 +33,7 @@ const About = () => {
 
     return () => cancelAnimationFrame(frameId); // Cleanup
   }, []);
-  
+
   return (
     <section className="c-space my-20" id="#about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -80,7 +80,7 @@ const About = () => {
           <div className="grid-container hover:animate-slideUp">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
-              ref={globeEl}
+                ref={globeEl}
                 height={326}
                 width={326}
                 backgroundColor="rgba(0,0,0,0)"
@@ -107,7 +107,13 @@ const About = () => {
               <p className="grid-subtext">
                 I'm based in INDIA, with available for remote work.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <div onClick={HandleCopy}>
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -123,19 +129,17 @@ const About = () => {
             <div className="text-left">
               <p className="grid-headtext">Web Dev</p>
               <p className="grid-subtext">
-                I specialize in JavaScript with a focus on building dynamic,
-                responsive UIs using React. <br />
-                I'm currently diving deeper into Node.js to strengthen my
-                backend development skills. <br />
-                I love challeging myself and solving the challenges that come
-                along the way. <br />
-                Every project is an opportunity to grow, improve, and create
-                something impactful.
+                I’m a developer who loves creating things on the web. Whether
+                it’s a full-stack app, a clean UI, or a new feature, I enjoy the
+                process of building and problem-solving. <br />
+                I’m always learning, experimenting, and pushing myself to do
+                better. <br />I want to work on meaningful projects and grow
+                into a well-rounded, reliable engineer.
               </p>
             </div>
           </div>
         </div>
-        
+
         {/* Fifth Grid */}
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container hover:animate-crumble hover:-translate-y-10">

@@ -6,7 +6,6 @@ import Footer from "./sections/Footer";
 const Hero = lazy(() => import("./sections/hero"));
 const About = lazy(() => import("./sections/About"));
 const Projects = lazy(() => import("./sections/Projects"));
-const Clients = lazy(() => import("./sections/Clients"));
 const Experiences = lazy(() => import("./sections/Experiences"));
 const Contact = lazy(() => import("./sections/Contact"));
 
@@ -27,11 +26,7 @@ const App = () => {
       <Suspense fallback={<div className="text-center text-white py-10">Loading Projects...</div>}>
         <Projects />
       </Suspense>
-
-      <Suspense fallback={<div className="text-center text-white py-10">Loading Clients...</div>}>
-        <Clients />
-      </Suspense>
-
+      
       <Suspense fallback={<div className="text-center text-white py-10">Loading Experiences...</div>}>
         <Experiences />
       </Suspense>

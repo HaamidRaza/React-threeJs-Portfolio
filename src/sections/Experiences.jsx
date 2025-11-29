@@ -82,7 +82,7 @@ const Experiences = () => {
                 but you could help build it!
               </p>
               <p className="mt-2 text-sm sm:text-base text-gray-300">
-                I’m open to internships, freelance work, or jobs.
+                I’m currently open to internships, freelance work, or jobs.
               </p>
             </div>
           </div>
