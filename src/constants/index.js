@@ -59,6 +59,48 @@ export const myProjects = [
     ],
   },
   {
+    title: "Obsidian Ink - Modern Blogging Platform",
+    desc: "Obsidian Ink is a full-stack blogging platform with a vintage-inspired design, enabling writers to create, publish, and manage content while readers discover, engage with, and bookmark their favorite stories through an elegant user experience.",
+    subdesc:
+      "Built using React, Node.js, Express, MongoDB, Clerk, TanStack Query, and ImageKit, Obsidian Ink provides a scalable, production-ready foundation for content publishing platforms with advanced analytics, role-based access control, and real-time engagement features.",
+    href: "https://obsidian-ink.vercel.app/",
+    texture: "/textures/project/project3.mp4",
+    logo: "/assets/obsidian-logo.svg",
+    logoStyle: {
+      backgroundColor: "#26231e",
+      border: "0.2px solid #26231e",
+      boxShadow: "0px 0px 60px 0px #8B45134D",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/node.png",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/mongodb.png",
+      },
+      {
+        id: 4,
+        name: "Express.js",
+        path: "/assets/express.png",
+      },
+      {
+        id: 5,
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png",
+      },
+    ],
+  },
+  {
     title: "Khana - Recipe Finder (React)",
     desc: "Khana is a modern recipe discovery app that lets users search for dishes, view detailed instructions, and manage favorites using a clean and responsive interface.",
     subdesc:
@@ -98,42 +140,42 @@ export const calculateSizes = (isRealMobile, isSmall, isMobile, isTablet) => {
     deskPosition: isRealMobile
       ? [0.5, 7.7, 0]
       : isSmall
-      ? [0.5, 13.7, -8]
-      : isMobile
-      ? [0.5, 13.7, -8]
-      : [0.3, 7.3, -8.6],
+        ? [0.5, 13.7, -8]
+        : isMobile
+          ? [0.5, 13.7, -8]
+          : [0.3, 7.3, -8.6],
     cubePosition: isSmall
       ? [5, 3.2, 0]
       : isMobile
-      ? [7, 6, 0]
-      : isTablet
-      ? [5, -5, 0]
-      : [17, -4.5, 0],
+        ? [7, 6, 0]
+        : isTablet
+          ? [5, -5, 0]
+          : [17, -4.5, 0],
     reactLogoPosition: isSmall
       ? [2, 4, 0]
       : isMobile
-      ? [5, 4, 0]
-      : isTablet
-      ? [5, 4, 0]
-      : [12, 3, 0],
+        ? [5, 4, 0]
+        : isTablet
+          ? [5, 4, 0]
+          : [12, 3, 0],
     ringPosition: isRealMobile
       ? [-4, 10, 0]
       : isSmall
-      ? [-5, 7, 0]
-      : isMobile
-      ? [-10, 12, 0]
-      : isTablet
-      ? [-12, 10, 0]
-      : [-10, 7, 10],
+        ? [-5, 7, 0]
+        : isMobile
+          ? [-10, 12, 0]
+          : isTablet
+            ? [-12, 10, 0]
+            : [-10, 7, 10],
     targetPosition: isRealMobile
       ? [-4, -1, -2]
       : isSmall
-      ? [-5, -2, -10]
-      : isMobile
-      ? [-9, 4, -10]
-      : isTablet
-      ? [-11, -7, -10]
-      : [-30, -13, -50],
+        ? [-5, -2, -10]
+        : isMobile
+          ? [-9, 4, -10]
+          : isTablet
+            ? [-11, -7, -10]
+            : [-30, -13, -50],
   };
 };
 

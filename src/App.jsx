@@ -13,25 +13,48 @@ const App = () => {
   return (
     <main className="max-w-7xl mx-auto">
       <Navbar />
-
       {/* Wrapping each lazy section in Suspense */}
-      <Suspense fallback={<div className="text-center text-white py-10">Loading Hero...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center text-white py-10">Loading Hero...</div>
+        }
+      >
         <Hero />
       </Suspense>
 
-      <Suspense fallback={<div className="text-center text-white py-10">Loading About...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center text-white py-10">Loading About...</div>
+        }
+      >
         <About />
       </Suspense>
 
-      <Suspense fallback={<div className="text-center text-white py-10">Loading Projects...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center text-white py-10">
+            Loading Projects...
+          </div>
+        }
+      >
         <Projects />
       </Suspense>
-      
-      <Suspense fallback={<div className="text-center text-white py-10">Loading Experiences...</div>}>
+
+      <Suspense
+        fallback={
+          <div className="text-center text-white py-10">
+            Loading Experiences...
+          </div>
+        }
+      >
         <Experiences />
       </Suspense>
 
-      <Suspense fallback={<div className="text-center text-white py-10">Loading Contact...</div>}>
+      <Suspense
+        fallback={
+          <div className="text-center text-white py-10">Loading Contact...</div>
+        }
+      >
         <Contact />
       </Suspense>
 

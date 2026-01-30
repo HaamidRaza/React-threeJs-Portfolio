@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
-import { useAnimations } from "@react-three/drei";
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -35,7 +34,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="c-space my-20" id="#about">
+    <section className="c-space my-20" id="about" >
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         {/* First Grid Item */}
         <div className="col-span-1 xl:row-span-3 hover:animate-slideUp">
@@ -156,7 +155,7 @@ const About = () => {
                   alt="copy"
                 />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
-                  achatheekhai9@gmail.com
+                  haamidshaikh404@gmail.com
                 </p>
               </div>
             </div>
